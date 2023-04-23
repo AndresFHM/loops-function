@@ -7,12 +7,22 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-
+  let flatArray = [];
+  array.forEach(subArray => {
+    if (Array.isArray(subArray)){
+    subArray.forEach(item => {
+      flatArray.push(item)
+    })
+  }else {
+      flatArray.push(subArray);
+  }
+  })
+  return flatArray;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-16"
 // If the test has all tests passed, switch to the next exercise file
 // If any of the tests fails, refactor the code and run the test command after you've fixed the function
+
+

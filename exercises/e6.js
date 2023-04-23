@@ -5,7 +5,19 @@
 
 export function getClientWithNoMoney(array) {
   // Your code goes here...
+  let accountNames = []
+  function BankAccount(id, name, balance) {
+    this.id = id;
+    this.name = name;  
+    this.balance = balance;
+  }
+  for (let index = 0; index < array.length; index++) {
+    const account = new BankAccount(array[index].id, array[index].name, array[index].balance)
+    if (array[index].balance === 0) {
+      accountNames.push(account.name)
+    }
 
+  }return accountNames
 }
 
 // === TEST YOURSELF ===

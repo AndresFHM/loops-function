@@ -7,6 +7,8 @@
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
 
+
+  return [...arr1, ...arr2] 
 }
 
 

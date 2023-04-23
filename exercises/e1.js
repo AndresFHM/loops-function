@@ -5,8 +5,14 @@
 
 export function getFirstTenNumbers() {
   // Your code goes here...
-
+  const numbers = [];
+  for (let index = 1; index <= 10; index++) {
+      numbers.push(index);      
+  }
+  return numbers
 }
+
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

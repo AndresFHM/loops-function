@@ -5,11 +5,28 @@
 
 export function findMinValueInArray(array) {
   // Your code goes here...
+  let minValue = array[0];
+  for (let index = 0; index < array.length; index++) {
+
+    if (array[index] < minValue){
+      minValue = array[index]
+    }
+    
+  } return minValue;
 }
 
 export function findMaxValueInArray(array) {
   // Your code goes here...
+  let maxValue = array[0];
+  for (let index = 1; index < array.length; index++) {
+
+    if (array[index] > maxValue){
+      maxValue= array[index]
+    }
+    
+  } return maxValue;
 }
+
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-4"

@@ -6,7 +6,15 @@
 
 export function getAllClientNames(array) {
   // Your code goes here...
-
+  let accountNames = []
+  function BankAccount(id, name) {
+    this.id = id;
+    this.name = name;      
+  }
+  for (let index = 0; index < array.length; index++) {
+    const account = new BankAccount(array[index].id, array[index].name)
+    accountNames.push(account.name)
+  }return accountNames
 }
 
 

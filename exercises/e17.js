@@ -7,11 +7,14 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-
+  for (let index = 0; index < array.length; index++){
+    if (value === array[index]) {
+      return true
+    }      
+    
+  } return false
 }
-
-
-
+ 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-17"
 // If the test has all tests passed, switch to the next exercise file
